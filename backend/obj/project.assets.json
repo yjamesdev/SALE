@@ -8086,20 +8086,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\devyi\\.nuget\\packages\\": {}
+    "C:\\Users\\Programacion 21\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\devyi\\OneDrive\\Documentos\\Projects\\SYSTEM\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\Users\\Programacion 21\\Documents\\Asp.Net\\SALE\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "c:\\Users\\devyi\\OneDrive\\Documentos\\Projects\\SYSTEM\\backend\\backend.csproj",
-      "packagesPath": "C:\\Users\\devyi\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\devyi\\OneDrive\\Documentos\\Projects\\SYSTEM\\backend\\obj\\",
+      "projectPath": "C:\\Users\\Programacion 21\\Documents\\Asp.Net\\SALE\\backend\\backend.csproj",
+      "packagesPath": "C:\\Users\\Programacion 21\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Programacion 21\\Documents\\Asp.Net\\SALE\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "c:\\Users\\devyi\\OneDrive\\Documentos\\Projects\\SYSTEM\\backend\\NuGet.Config",
-        "C:\\Users\\devyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Programacion 21\\Documents\\Asp.Net\\SALE\\backend\\NuGet.Config",
+        "C:\\Users\\Programacion 21\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

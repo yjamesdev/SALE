@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using backend.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using Microsoft.IdentityModel.Tokens;
 
 namespace backend.Controllers
@@ -66,16 +67,31 @@ namespace backend.Controllers
                 var result = await _roleManager.CreateAsync(new IdentityRole(role));
                 if (result.Succeeded)
                 {
-                  return Ok(new {message = "Role Added Sucessfully"});
+                    return Ok(new { message = "Role Added Successfully" });
                 }
                 return BadRequest(result.Errors);
             }
-            BadRequest("Role alredy Exists");
+
+            return BadRequest("Role already exists");
         }
 
         [HttpPost("assign-role")]
-        public async Task<IActionResult> AssignRole([FromBody] Role model) {
-            var user = await 
+        public async Task<IActionResult> AssignRole([FromBody] Role model)
+        {
+            var user = await _userManager.FindByNameAsync(model.Username);
+
+            if (user == null)
+            {
+                return BadRequest("User not found");
+            }
+
+            var result = await _userManager.AddToRoleAsync(user, model.Roles);
+
+            if (result.Succeeded)
+            {
+              return Ok(new {Message = "Role assigned succesfully"});
+            }
+            return BadRequest(result.Errors);
         }
     }
 }
